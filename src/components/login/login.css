@@ -1,0 +1,154 @@
+.background {
+  margin: 30px;
+  width: 1000px;
+  height: 450px;
+  border: 0.1px groove gray;
+  border-radius: 25px;
+  backdrop-filter: blur(50px);
+  display: flex;
+  justify-content: space-between;
+}
+
+.form__container {
+  position: relative;
+  left: 10%;
+}
+
+.form__container form {
+  width: 300px;
+  margin-left: 20px;
+  margin-top: 40px;
+}
+
+.form__container form input {
+  margin: 5px;
+  width: 260px;
+  padding: 0.938rem;
+  border: 0.1px groove gray;
+  background-color: #171717;
+  color: white;
+  border-radius: 15px;
+  outline: none;
+}
+
+.form__container form button {
+  margin: 10px;
+  width: 290px;
+  height: 50px;
+  cursor: pointer;
+  background: #00ff66;
+  color: #171717;
+  border: none;
+  border-radius: 20px;
+}
+
+.additional_text {
+  position: relative;
+  left: 28%;
+  top: 5%;
+}
+
+.additional_text h3 {
+  font-size: 15px;
+  color: white;
+}
+
+.additional_text h3 span {
+  font-size: 20px;
+  text-decoration: underline;
+}
+
+.content_container {
+  position: relative;
+  top: 20%;
+  right: 10%;
+  width: 400px;
+  height: 200px;
+  border-radius: 15px;
+  background-color: #171717;
+  overflow: hidden;
+}
+
+.content_container h2 {
+  margin: 20px;
+  margin-left: 15%;
+  color: #00ff66;
+}
+
+.content_container p {
+  margin: 20px;
+  font-size: 15px;
+  color: white;
+}
+
+.home__conatiner {
+  color: #00ff66;
+  background-color: #171717;
+  width: 500px;
+  height: 200px;
+  border-radius: 10px;
+  position: relative;
+  top: 20%;
+}
+.home__content {
+  position: relative;
+  top: 10%;
+  left: 10%;
+}
+
+@media (max-width: 600px) {
+  .background {
+    width: 90%;
+    max-width: 600px;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 50%;
+  }
+
+  .form__container {
+    left: 0;
+    margin-top: 20px;
+  }
+
+  .form__container form {
+    width: 80%;
+    margin-left: 10;
+  }
+
+  .form__container form input {
+    width: 100%;
+  }
+
+  .form__container form button {
+    width: 100%;
+  }
+
+  .additional_text {
+    left: 0;
+    top: 5%;
+    text-align: center;
+  }
+
+  .content_container {
+    position: absolute;
+    top: -60%;
+    right: 80;
+    width: 90%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  .content_container h2 {
+    margin-left: 5%;
+    text-align: center;
+  }
+
+  .content_container p {
+    margin: 10px;
+    font-size: 14px;
+    text-align: center;
+  }
+}
